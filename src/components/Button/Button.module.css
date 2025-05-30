@@ -1,0 +1,35 @@
+.panelButton {
+    width: auto;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222935;
+    color: #F7FFF7;
+    font-size: 14px;
+}
+.panelButton span{
+    width: 14px;
+    height: 14px;
+}
+.knowMoreButton {
+    width: 130x;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222935;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color: #F7FFF7;
+    
+}
+.knowMoreButton span{
+    display: none;
+}
+button:hover {
+    cursor: pointer;
+}

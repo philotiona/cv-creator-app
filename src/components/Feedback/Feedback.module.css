@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+user {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.span {
+    color:#26C17E;
+}
+.image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}

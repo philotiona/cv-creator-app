@@ -1,0 +1,12 @@
+.panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    width: 250px;
+    background-color: #222935;
+}
+.top{
+    height: auto;
+    width: auto;
+}
