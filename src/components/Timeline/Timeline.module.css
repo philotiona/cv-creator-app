@@ -1,0 +1,83 @@
+.wrapper {
+  margin: 0;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  gap: 2rem;
+}
+.timeline {
+  position: relative;
+  margin-left: 2rem;
+  padding-left: 3.75rem;
+  border-left: 5px solid #26C17E;
+  
+}
+.container {
+    max-height: 20rem;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.container::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 20%;
+    background: #f7f7f7;
+    border-radius: 2rem;
+}
+.container::-webkit-scrollbar-thumb {
+    color: #26C17E;
+}
+.event {
+  position: relative;
+  padding: 0.2rem;
+}
+
+.dot {
+  position: absolute;
+  left: -5.55rem;
+  top: 0;
+  width: 3rem;
+  height: auto;
+  min-height: 2.5rem;
+  background: #f7f7f7;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.content {
+  background: #EEEEEE;
+  padding: 1rem;
+  width: 100%;
+  height: auto;
+  color: #000;
+  position: relative;
+}
+.content p {
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+.content h5 {
+    color: #000;
+    font-family: Open Sans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}

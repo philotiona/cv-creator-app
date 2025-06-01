@@ -1,3 +1,9 @@
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .panelButton {
     width: auto;
     height: auto;
@@ -12,11 +18,11 @@
     height: 14px;
 }
 .knowMoreButton {
-    width: 130x;
+    width: 130px;
     height: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #222935;
     border-radius: 5px;
@@ -27,9 +33,26 @@
     color: #F7FFF7;
     
 }
-.knowMoreButton span{
+.knowMoreButton .span{
     display: none;
 }
 button:hover {
     cursor: pointer;
+}
+.miniPanelButton {
+    width: 40px;
+    height: 30px;
+    text-decoration: none;
+    background-color: #26C17E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+.miniPanelButton .spanText {
+    display: none;
+}
+.miniPanelButton .span {
+    width: 14px;
+    height: 14px;
 }
