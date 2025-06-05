@@ -84,7 +84,7 @@ view:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: #EEEEEE;
   color: #000;
   opacity: 0;
   transition: opacity 0.3s;
@@ -92,10 +92,14 @@ view:hover {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  transform: translateY(100%);
+  transition: transform 700ms ease-in-out;
+
 }
 
 .image:hover .imageOverlay {
   opacity: 1;
+  transform: translateY(0%);
 }
 .buttons {
   background-color: #f7f7f7;
