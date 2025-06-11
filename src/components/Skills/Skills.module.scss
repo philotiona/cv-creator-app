@@ -1,0 +1,235 @@
+.wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #000;
+    gap: 2rem;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.btn {
+    width: 8.5rem;
+    height: auto;
+    padding: 0.5rem;
+    background-color: #222935;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+.scale {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+
+}
+.line {
+    background: #667081;
+    width: 100%;
+    height: 1px;   
+}
+.levels {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #667081;
+    text-align: center;
+}
+.p {
+    position: relative;
+}
+.p::before {
+
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: #667081;
+    position: absolute;
+    top:-70%;
+    right: 50%;
+}
+.p_before {
+    position: relative;
+}
+.p_before::before {
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: #667081;
+    position: absolute;
+    top:-70%;
+    left: 0;
+}
+.p_after {
+    position: relative;
+}
+.p_after::before {
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: #667081;
+    position: absolute;
+    top: -70%;
+    right: 0;
+}
+.form {
+    width: 100%;
+    height: auto;
+    border: 1px solid #26C17E;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
+}
+.inputWrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    gap: 1rem;
+
+}
+.skillNameSuperWrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.skillNameWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    height: 2.5rem;
+    width: 100%;
+}
+.skillRangeSuperWrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.skillRangeWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    height: 2.5rem;
+    
+}
+.addSkill {
+    background-color: #383E49;
+    width: 100%;
+    max-width: 100px;
+    height: 2.5rem;
+    padding: 0.5rem;
+    color: #f7f7ff;
+    border-radius: 5px;
+    &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+}
+.skillNameClass {
+    background-color: #f7f7f7;
+    border: 1px solid #667081;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 16rem;
+    height: 100%;
+    color: #000;
+    padding: .5rem;
+} 
+.skillRangeClass {
+    background-color: #f7f7f7;
+    border: 1px solid #667081;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 16rem;
+    height: 100%;
+    color: #000;
+    padding: .5rem;
+}
+input::placeholder{
+    text-align: left;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+}
+.error {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.skillsList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.skillItem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.skillBar {
+    height: 2rem;
+    background-color: #26c17e;
+    transition: width 0.3s ease;
+    position: relative;
+    
+    span {
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        z-index: 1;
+    }
+}
+.inputError {
+    border-color: #dc3545;
+    &:focus {
+        outline: none;
+        border-color: #dc3545;
+    }
+}

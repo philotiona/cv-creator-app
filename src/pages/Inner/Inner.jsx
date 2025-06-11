@@ -6,6 +6,7 @@ import Portfolio from "../../components/Portfolio/Portfolio";
 import Address from "../../components/Address/Address";
 import Feedback from "../../components/Feedback/Feedback";
 import Timeline from "../../components/Timeline/Timeline";
+import Skills from "../../components/Skills/Skills";
 
 export default function Inner() {
     return (
@@ -24,9 +25,9 @@ export default function Inner() {
                         { "date": 2017, "title": "Title 4", "text": "Sint amet excepteur deserunt enim. Excepteur enim fugiat magna deserunt. Excepteur enim nisi magna deserunt fugiat enim." },
                         { "date": 2019, "title": "Title 5", "text": "Deserunt enim magna excepteur fugiat enim nisi. Excepteur enim magna deserunt fugiat enim nisi. Magna deserunt enim excepteur enim fugiat nisi." },
                         { "date": 2021, "title": "Title 6", "text": "Enim excepteur magna deserunt fugiat enim nisi. Magna deserunt enim excepteur enim fugiat nisi. Excepteur enim magna deserunt fugiat enim nisi." },
-                        { "date": 2023, "title": "Title 7", "text": "Fugiat enim nisi magna deserunt excepteur enim. Magna deserunt enim excepteur enim fugiat nisi. Excepteur enim magna deserunt fugiat enim nisi." }
-]} />
+                        { "date": 2023, "title": "Title 7", "text": "Fugiat enim nisi magna deserunt excepteur enim. Magna deserunt enim excepteur enim fugiat nisi. Excepteur enim magna deserunt fugiat enim nisi." }]} />
                 <Expertise data={[ { date: '2013-2014', info: { company: 'Google', job: 'Front-end developer / php programmer', description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor' } }, { date: '2012', info: { company: 'Twitter', job: 'Web developer', description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor' } } ]} />
+                <Skills/>
                 <Portfolio/>
                 <Address/>
                 <Feedback data={[ {feedback: ' Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor', reporter: { photoUrl: './user.png', name: 'John Doe', citeUrl: 'https://www.citeexample.com' } }, {feedback: ' Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor', reporter: { photoUrl: './user.jpg', name: 'John Doe', citeUrl: 'https://www.citeexample.com' } } ]} />
